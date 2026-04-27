@@ -6,7 +6,9 @@
   "scripts": {
     "ping": "tsx scripts/ping.ts",
     "analyze": "tsx scripts/analyze-seo.ts",
-    "screenshot": "tsx scripts/screenshot.ts"
+    "screenshot": "tsx scripts/screenshot.ts",
+    "pagespeed": "tsx scripts/pagespeed.ts",
+    "lighthouse": "node scripts/lighthouse.mjs"
   },
   "keywords": [
     "seo",
@@ -20,8 +22,9 @@
     "puppeteer": "^23.11.1"
   },
   "devDependencies": {
+    "@types/node": "^22.10.2",
+    "lighthouse": "^13.1.0",
     "tsx": "^4.19.3",
-    "typescript": "^5.8.3",
-    "@types/node": "^22.10.2"
+    "typescript": "^5.8.3"
   }
 }
