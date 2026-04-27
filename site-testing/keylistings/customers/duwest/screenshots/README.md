@@ -7,30 +7,30 @@ Visual testing across common device sizes for https://keylistings.com/customers/
 ## Mobile
 
 ### iPhone SE/8 (375x667)
-![Mobile Screenshot](mobile.png)
+<img src="mobile.png" height="600">
 
 ### iPhone XR/11 (414x896)
-![Mobile Large Screenshot](mobile-large.png)
+<img src="mobile-large.png" height="600">
 
 ---
 
 ## Tablet
 
 ### iPad Portrait (768x1024)
-![Tablet Screenshot](tablet.png)
+<img src="tablet.png" height="600">
 
 ### iPad Landscape (1024x768)
-![Tablet Landscape Screenshot](tablet-landscape.png)
+<img src="tablet-landscape.png" height="600">
 
 ---
 
 ## Desktop
 
 ### MacBook Pro (1440x900)
-![Desktop Laptop Screenshot](desktop-laptop.png)
+<img src="desktop-laptop.png" height="600">
 
 ### Full HD (1920x1080)
-![Desktop Screenshot](desktop.png)
+<img src="desktop.png" height="600">
 
 ---
 
