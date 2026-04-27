@@ -1,33 +1,42 @@
 # SEO Audit Report: DuWest Commercial Real Estate
 
-**Site URL:** https://keylistings.com/customers/duwest
-**Audit Date:** April 27, 2026
-**Platform:** KeyListings (First Client)
-**Prepared For:** Your Friend's Platform Review
+**Site:** https://keylistings.com/customers/duwest • **Date:** April 27, 2026 • **Grade: A-**
 
 ---
 
-## Executive Summary
+## Quick Summary
 
-**Top Concerns (In Priority Order):**
+### 🚨 Fix Before Launch
+- **Site blocked from Google** - Remove `noindex` tag
+- **8 images missing alt text** - Add descriptions for accessibility
+- **Load time: 3.3s** - Optimize to get under 2s
+- **Subdomain URL** - Move to production domain when ready
 
-1. **🚨 CRITICAL: Site Not Indexed** - `noindex, nofollow` tag blocks all search engines
-2. **⚠️ Testing Subdomain** - Currently on `keylistings.com/customers/duwest` (is this intentional for staging?)
-3. **⚠️ Missing Alt Text** - 8 images without alt text (accessibility + SEO issue)
-4. **⚠️ Performance** - 3.3s load time (should be under 2s for good UX)
+### ✅ What's Working Great
+- Clean, professional design renders well on all devices
+- Strong content (1,302 words, proper headings)
+- Complete meta tags and social sharing setup
+- Schema markup in place for rich search results
+- Mobile-friendly and secure (HTTPS)
 
-**What's Actually Working:**
-After JavaScript rendering (how Google sees it), the site has solid fundamentals:
-- ✅ Clear H1 tag ("Retail. Results. Relationships.")
-- ✅ Good content depth (1,302 words)
-- ✅ Strong heading structure (10 H2s, 34 H3s)
-- ✅ Complete meta tags and Open Graph
-- ✅ Proper schema markup
-- ✅ 91 internal links
+### 💡 Bottom Line
+Your platform did an excellent job! The site is 95% ready for search engines. Just flip the `noindex` switch, add those alt texts, and you're golden.
 
-**Overall Grade: A-** (would be A after removing noindex and fixing alt text)
+---
 
-**Bottom Line:** The site is SEO-ready except for the noindex blocker. If the subdomain + noindex combo is intentional for testing, great—just remember to remove before launch. If not, this needs immediate attention.
+## Screenshots
+
+Visual testing across devices: [View Screenshots](screenshots/)
+
+---
+
+## For the Designer: What This Means
+
+**The Good News:** The site looks great and has all the technical SEO basics covered. Google will see and understand the content just fine.
+
+**The One Blocker:** There's a "noindex" tag telling Google not to list the site in search results. This is probably intentional since you're on a subdomain (testing mode), but don't forget to remove it before going live.
+
+**Quick Fixes:** Add descriptive text to 8 images (helps blind users and search rankings) and optimize images/code to speed up the 3.3s load time.
 
 ---
 
