@@ -55,32 +55,32 @@ async function takeScreenshots(url: string, outputDir: string) {
     // Wait a bit for any animations/transitions
     await new Promise(resolve => setTimeout(resolve, 500));
 
-    // Take full page screenshot
-    const fullFilename = `${viewport.name}-full.png`;
-    const fullFilepath = join(outputDir, fullFilename);
+    // Take screenshot of above-the-fold + one scroll (~1.5x viewport height)
+    // This captures enough to see initial experience without massive files
+    const filename = `${viewport.name}.png`;
+    const filepath = join(outputDir, filename);
+
+    const captureHeight = Math.floor(viewport.height * 1.5);
 
     await page.screenshot({
-      path: fullFilepath,
-      fullPage: true,
+      path: filepath,
+      fullPage: false,
+      clip: {
+        x: 0,
+        y: 0,
+        width: viewport.width,
+        height: captureHeight,
+      },
     });
 
-    // Take above-the-fold screenshot (viewport only, no scrolling)
-    const foldFilename = `${viewport.name}.png`;
-    const foldFilepath = join(outputDir, foldFilename);
-
-    await page.screenshot({
-      path: foldFilepath,
-      fullPage: false, // Only capture visible viewport
-    });
-
-    console.log(`   ✓ Saved: ${foldFilename} (above fold) + ${fullFilename} (full page)`);
+    console.log(`   ✓ Saved: ${filename} (${viewport.height}px + ${captureHeight - viewport.height}px scroll)`);
   }
 
   await browser.close();
 
   console.log(`\n✅ All screenshots saved to: ${outputDir}`);
-  console.log('\nScreenshots taken (above-the-fold + full page):');
-  VIEWPORTS.forEach(v => console.log(`  - ${v.name}.png + ${v.name}-full.png (${v.width}x${v.height})`));
+  console.log('\nScreenshots taken (above-the-fold + one scroll):');
+  VIEWPORTS.forEach(v => console.log(`  - ${v.name}.png (${v.width}x${Math.floor(v.height * 1.5)})`));
 }
 
 // Parse command line arguments
