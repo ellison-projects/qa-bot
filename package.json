@@ -1,0 +1,21 @@
+{
+  "name": "qa-bot",
+  "version": "0.1.0",
+  "description": "A server-side TypeScript app for crawling websites and identifying SEO and technical concerns.",
+  "main": "index.js",
+  "scripts": {
+    "ping": "tsx scripts/ping.ts"
+  },
+  "keywords": [
+    "seo",
+    "crawler",
+    "qa",
+    "typescript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.3"
+  }
+}
