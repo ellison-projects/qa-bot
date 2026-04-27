@@ -4,7 +4,8 @@
   "description": "A server-side TypeScript app for crawling websites and identifying SEO and technical concerns.",
   "main": "index.js",
   "scripts": {
-    "ping": "tsx scripts/ping.ts"
+    "ping": "tsx scripts/ping.ts",
+    "analyze": "tsx scripts/analyze-seo.ts"
   },
   "keywords": [
     "seo",
@@ -14,8 +15,12 @@
   ],
   "author": "",
   "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^23.11.1"
+  },
   "devDependencies": {
     "tsx": "^4.19.3",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "@types/node": "^22.10.2"
   }
 }
